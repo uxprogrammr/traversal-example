@@ -17,7 +17,6 @@ const objectTraversal = (obj) => {
     if (key === "name") {
       html += `<li>${value}</li>`;
     } else if (key === "nodes") {
-      console.log("process nodes " + value);
       html += arrayTraversal(value);
     }
   });
